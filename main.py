@@ -144,7 +144,7 @@ def main():
                       classifier_optimizer, writer, epoch, n_iter, train_log)
 
         scheduler_vae.step(), scheduler_pre.step()
-        auc_val_value = val(args, causal_hmm_model, classifier, val_dataset, batch_size, writer, epoch, n_iter, save_dir, val_log)
+        auc_val_value = val(args, causal_hmm_model, classifier, val_dataset, batch_size, writer, epoch, n_iter, val_log)
 
         if auc_val_value > current_best_auc:
             current_best_auc = auc_val_value
@@ -153,7 +153,7 @@ def main():
             val_log['val_log'].info("current best val auc:{0} at epoch {1}".format(current_best_auc, epoch))
 
         torch.cuda.empty_cache()
-        test(args, causal_hmm_model, classifier, test_dataset, batch_size, writer, epoch, n_iter, save_dir, test_log)
+        test(args, causal_hmm_model, classifier, test_dataset, batch_size, writer, epoch, n_iter, test_log)
 
     print("Finish!... saved all results")
 
