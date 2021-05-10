@@ -138,7 +138,7 @@ class Causal_HMM(nn.Module):
         f_s = torch.cat((x_t, feature_A, feature_B, s_t_last), 1)
         f_s = self.post_s_fc(f_s)
         mu_s = self.post_s1(f_s)
-        logvar_s = self.post_s2(f_z)
+        logvar_s = self.post_s2(f_s)
 
         f_v = torch.cat((x_t, feature_A, feature_B, v_t_last), 1)
         f_v = self.post_v_fc(f_v)
