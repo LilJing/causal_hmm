@@ -1,5 +1,5 @@
 # Causal Hidden Markov Model for Time Series Disease Forecasting
-This repository is the python implementation of [Causal Hidden Markov Model for Time Series Disease Forecasting(CVPR2021)](https://openaccess.thecvf.com/content/CVPR2021/papers/Wu_Forecasting_Irreversible_Disease_via_Progression_Learning_CVPR_2021_paper.pdf).
+This repository is the python implementation of [Causal Hidden Markov Model for Time Series Disease Forecasting(CVPR2021)](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Causal_Hidden_Markov_Model_for_Time_Series_Disease_Forecasting_CVPR_2021_paper.pdf).
 
 ## The directed acylic graph (DAG) for our Causal-HMM.
 ![The directed acylic graph (DAG) for our Causal-HMM](https://github.com/LilJing/causal_hmm/blob/main/graph.png)
