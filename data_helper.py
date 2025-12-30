@@ -61,7 +61,6 @@ class RETINA(Dataset):
                 self.image_names.append(image_sequence_name)
                 self.labels.append(np_label)
 
-
     def get_image_sequence(self, idx):
         im_size = self.args.image_size
         grade_sequences = []
